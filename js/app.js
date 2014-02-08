@@ -10,12 +10,11 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/about', {templateUrl: 'about.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/home', {templateUrl: 'homePage.html', controller: 'MyCtrl2'});
+  $routeProvider.when('/about', {templateUrl: 'about.html', controller: 'aboutCtrl'});
+  $routeProvider.when('/home', {templateUrl: 'homePage.html', controller: 'homeCtrl'});
   $routeProvider.when('/site', {templateUrl: 'index.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/contact', {templateUrl: 'contact.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/blog', {templateUrl: 'blog.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/check', {templateUrl: 'check.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/', {templateUrl: 'homePage.html', controller: 'MyCtrl2'});
+  $routeProvider.when('/contact', {templateUrl: 'contact.html', controller: 'contactCtrl'});
+  $routeProvider.when('/blog', {templateUrl: 'blog.html', controller: 'blogCtrl'});
+  $routeProvider.when('/', {templateUrl: 'homePage.html', controller: 'homeCtrl'});
   $routeProvider.otherwise({redirectTo: '/'});
 }]);

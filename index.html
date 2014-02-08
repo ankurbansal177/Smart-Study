@@ -43,8 +43,6 @@
                 </li>
                 <li><a href="#/contact">Contact</a>
                 </li>
-                <li><a href="#/check">Check</a>
-                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -111,9 +109,7 @@
                     <hr>
                     <img class="img-responsive img-border img-left" src="img/intro-pic.jpg">
                     <hr class="visible-xs">
-                    <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
-                    <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <div ng-bind-html="motivationMessage">{{motivationMessage}}</div>
                 </div>
             </div>
         </div>
@@ -192,7 +188,7 @@
         <div class="box">
             <div class="col-lg-12">
                 <hr>
-                <h2 class="intro-text text-center">About <strong>business casual</strong>
+                <h2 class="intro-text text-center">About <strong>{{venture | uppercase}}</strong>
                 </h2>
                 <hr>
             </div>
@@ -218,20 +214,20 @@
             </div>
             <div class="col-sm-4 text-center">
                 <img class="img-responsive" src="http://placehold.it/750x450">
-                <h3>John Smith
-                    <small>Job Title</small>
+                <h3>{{coo.name}}
+                    <small>{{coo.title}}</small>
                 </h3>
             </div>
             <div class="col-sm-4 text-center">
                 <img class="img-responsive" src="http://placehold.it/750x450">
-                <h3>John Smith
-                    <small>Job Title</small>
+                <h3>{{ceo.name}}
+                    <small>{{ceo.title}}</small>
                 </h3>
             </div>
             <div class="col-sm-4 text-center">
                 <img class="img-responsive" src="http://placehold.it/750x450">
-                <h3>John Smith
-                    <small>Job Title</small>
+                <h3>{{cto.name}}
+                    <small>{{cto.title}}</small>
                 </h3>
             </div>
             <div class="clearfix"></div>
@@ -245,7 +241,7 @@
         <div class="box">
             <div class="col-lg-12">
                 <hr>
-                <h2 class="intro-text text-center">Contact <strong>business casual</strong>
+                <h2 class="intro-text text-center">Contact <strong>{{companyName}}</strong>
                 </h2>
                 <hr>
             </div>
@@ -254,53 +250,17 @@
                 <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?t=m&amp;q=chandigarh&amp;ie=UTF8&amp;hq=&amp;hnear=Chandigarh&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?t=m&amp;q=chandigarh&amp;ie=UTF8&amp;hq=&amp;hnear=Chandigarh&amp;z=12&amp;iwloc=A&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
             </div>
             <div class="col-md-4">
-                <p>Phone: <strong>555.519.2013</strong>
+                <p>Phone: <strong>{{phone}}</strong>
                 </p>
-                <p>Email: <strong>feedback@startbootstrap.com</strong>
+                <p>Email: <strong>{{email}}</strong>
                 </p>
-                <p>Address: <strong>The Plaza<br>5483 Start Bootstrap Ave.<br>Beverley Hills, CA 26829</strong>
+                <p>Address: <strong>{{address}}</strong>
                 </p>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="box">
-            <div class="col-lg-12">
-                <hr>
-                <h2 class="intro-text text-center">Contact <strong>form</strong>
-                </h2>
-                <hr>
-                <p>This contact form is just the form elements, it is not a working form. You will have to make the form work by yourself, or take it out if you can't figure out how to make it work.</p>
-                <form role="form">
-                    <div class="row">
-                        <div class="form-group col-lg-4">
-                            <label>Name</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-lg-4">
-                            <label>Email Address</label>
-                            <input type="email" class="form-control">
-                        </div>
-                        <div class="form-group col-lg-4">
-                            <label for="input3">Phone Number</label>
-                            <input type="phone" class="form-control">
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="form-group col-lg-12">
-                            <label>Message</label>
-                            <textarea class="form-control" rows="6"></textarea>
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <input type="hidden" name="save" value="contact">
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 </script>
 <!-- /.container -->
 
