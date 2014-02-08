@@ -8,4 +8,6 @@ angular.module('myApp.controllers', []).
   }])
   .controller('MyCtrl2', [function() {
 
+  }])
+  .controller('SuperCtrl', [function($scope) {
   }]);
