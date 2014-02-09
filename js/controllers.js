@@ -29,7 +29,7 @@ angular.module('myApp.controllers', []).
 
   }])
   .controller('aboutCtrl', ['$scope',function($scope) {
-        $scope.aboutMessage = '<p>We are a company of scale 5-10 employees and all of them are graduates from Indian Institute of Technology. Our motive is to improve the study standards of the students in India</p>' +
+        $scope.aboutMessage = '<p>We are a startup with a scale of 5-10 employees Our motive is to improve the study standards of the students in India</p>' +
             '<p>We are capable of delivering software solutions in many fields which includes Web applications, Mobile Applications etc.' +
             'You can come up with an abstract idea and we have a team which is capable of converting your idea into a product </p>';
         $scope.ceo = {name: 'Saurabh Singla',
