@@ -10,7 +10,7 @@ angular.module('myApp.controllers', []).
 
   }])
   .controller('SuperCtrl', ['$scope',function($scope) {
-        $scope.title = 'hello there';
+        $scope.title = 'Study Smart';
         $scope.companyName = 'Angular Technologies Pvt. Ltd. 2013';
         $scope.venture = 'Smart Study';
 
